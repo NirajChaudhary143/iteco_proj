@@ -1,0 +1,54 @@
+body{
+    background-color: #e4e7ee;
+}
+.main-contc{
+    background-color: #fff;
+    padding: 20px;
+}
+h4{
+    color: rgb(67, 97, 179);
+    font-size: 20px;
+    font-weight: bold;
+}
+p{
+    color: #646161;
+    letter-spacing: 1px;
+    font-family: 'Catamaran', sans-serif;
+}
+iframe{
+    border: 1px solid #ccc;
+}
+.medias2 a i{
+    color: #fff;
+    height:30px;
+    width: 30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.medias2 .fa-facebook-f,.fa-linkedin-in{
+    background-color: rgb(36, 95, 255);
+}
+.medias2 .fa-instagram{
+    background-color: rgb(253, 35, 35);
+}
+.medias2 .fa-twitter{
+    background-color: rgb(0, 162, 255);
+}
+.left-contact{
+    border-right: 1px solid #cecece;
+}
+.msg{
+    border: 1px solid #c4c1c1;
+    height:40px;
+    border-radius: 0;
+    padding: 0px 10px;
+    font-size: 16px;
+    background: #eee9;
+}
+.textareac{
+    padding-top: 10px;
+    height:185px;
+    width: 100%;
+}

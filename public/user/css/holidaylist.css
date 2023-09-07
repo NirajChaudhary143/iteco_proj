@@ -1,0 +1,25 @@
+body{
+    background-color: #e4e7ee;
+}
+.contt {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.content img{
+    height: 1250px;
+    width: 100%;
+   
+}
+
+@media (max-width: 768px) {
+    .content img {
+        width: 100%;
+        height: 100vh;
+    }
+}
+

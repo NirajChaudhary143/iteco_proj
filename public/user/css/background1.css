@@ -1,0 +1,35 @@
+body{
+    background-color: #e4e7ee;
+
+}
+
+
+.contt {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px 40px;
+
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.project-details-image{
+    padding-bottom: 20px;
+}
+
+.project-details-image img{
+    width: 80%;
+    height: 60vh;
+}
+
+.project-details-text p{
+    /* font-family:Arial, Helvetica, sans-serif; */
+    font-family: 'Catamaran', sans-serif;
+    font-size: 17px;
+
+}
+.project-details-image iframe{
+    width: 100%;
+    height:515px;
+}

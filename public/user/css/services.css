@@ -1,0 +1,52 @@
+body{
+    background-color: #e4e7ee;
+}
+.scard{
+    padding-top: 15px;
+    height: 100%;
+    border-radius: 5px;
+    border: 1px solid #cccccc;
+    transition: 0.3s ease-out;
+    background: #fafafc;
+    box-shadow: 5px 5px 10px 2px #c7c7c7;
+}
+.scard img{
+    height:100px;
+    width: auto;
+    margin-bottom: 40px;
+}
+.title2::after{
+    box-shadow: 0px 0px  10px 5px #c8dadb;
+    background:rgb(0, 0, 0);
+    transform: translateX(0px) translateY(-17px) rotateZ(45deg);
+}
+.title2::before{
+    background: linear-gradient(90deg,#ccc,#030303,#ccc);
+    transform: translateX(-100px) translateY(-15px);
+}
+.scard:hover .title2::after{
+    box-shadow: 0px 0px  10px 5px #f3f3f3;
+}
+.scard:hover{
+    background: rgb(231, 231, 241);
+}
+.desc2{
+    font-size: 12px;
+    /* padding: 0px px; */
+    letter-spacing: 1px;
+    text-align: justify;
+    line-height: 20px;
+    list-style-type: none;
+    list-style-position: inside;
+
+}
+
+.desc2 li {
+    text-indent: -10px;
+    padding-right: 30px;
+}
+.desc2 li::before {
+    content: "\00BB"; /* Unicode for >> character */
+    margin-right: 5px;
+}
+

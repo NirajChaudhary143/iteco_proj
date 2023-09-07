@@ -1,0 +1,15 @@
+form input,form select,form textarea{
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 5px;
+    color: #555;
+    border-radius: 7px;
+    line-height: 15px;
+}
+form input:focus,form select:focus,form textarea{
+    outline: 1px solid #ccc;
+}
+.form-inp{
+    display: flex;
+    flex-direction: column;
+}
