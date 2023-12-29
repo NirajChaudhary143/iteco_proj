@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\contactUsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -51,6 +52,8 @@ Route::get('/iteco/page5',[UserController::class,'page5'])->name('page5');
 Route::get('/iteco/page6',[UserController::class,'page6'])->name('page6');
 Route::get('/iteco/ongoingProjects',[AdminController::class,'ongoingProjects'])->name('ongoingProjects');
 Route::get('/iteco/completedProjects',[AdminController::class,'completedProjects'])->name('completedProjects');
+// send Mail route
+Route::post('/send-email',[contactUsController::class,'contactUs'])->name('send.mail');
 
 
 // News
@@ -82,6 +85,7 @@ Route::middleware(['admin'])->group( function () {
 });
 Route::get('/iteco/ongoing-projects',[AdminController::class,'ongoingProjects'])->name('ongoing.projects');
 Route::get('/iteco/completed-projects',[AdminController::class,'completedProjects'])->name('completed.projects');
+
 
 
 require __DIR__.'/auth.php';

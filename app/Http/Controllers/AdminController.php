@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News;
 use App\Models\Project;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 
 use function Laravel\Prompts\alert;
 
@@ -18,7 +19,7 @@ class AdminController extends Controller
     }
 
     public function viewProject(){
-        $projects_details = Project::latest()->get();
+        $projects_details = Project::latest()->paginate(10);
         $page_category='Projects Settings';
         $category_name = 'View Projects';
         $page_title = 'View Projects';

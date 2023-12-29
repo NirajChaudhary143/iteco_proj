@@ -32,15 +32,16 @@
                     <ul class="">
                         <li class="h5">Send Us a Message</li>
                         <div class="underl"></div>
-                        <form action="mailto:iteco@mos.com.np" method="" class="row">
+                        <form action="{{route('send.mail')}}" method="POST" class="row">
+                            @csrf
                             <label for="name" class="form-label col-lg-4">Name</label>
                             <input type="text" name="name" id="name" class="forn-control col-lg-8 mb-1" style="height:30px;">
 
                             <label for="name" class="form-label col-lg-4">E-mail</label>
-                            <input type="text" name="name" id="name" class="forn-control col-lg-8 mb-1" style="height:30px;">
+                            <input type="email" name="email" id="name" class="forn-control col-lg-8 mb-1" style="height:30px;">
 
                             <label for="name" class="form-label col-lg-4">Write Message</label>
-                            <textarea name="name" id="name" class="textareaf forn-control col-lg-8 mb-1" style="height:70px;"></textarea>
+                            <textarea name="message" id="name" class="textareaf forn-control col-lg-8 mb-1" style="height:70px;"></textarea>
                             <input  type="submit" value="Submit" class="submit_btn form-control">
                         </form>
                     </ul>

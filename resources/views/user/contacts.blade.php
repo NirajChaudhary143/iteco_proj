@@ -29,18 +29,18 @@
                         </div>
                     </div>
                     <div class="col-lg-9 col-md-6 col-sm-12 right-contact  mt-5">
-                        <form class="row form">
+                        <form class="row form" action="{{route('send.mail')}}" method="POST">
+                            @csrf
                             <div class="col-md-12 col-lg-6 col-sm-12 mb-4">
-                                <input type="text" class=" msg w-100" placeholder="Enter Your Name">
+                                <input type="text" class=" msg w-100" name="name" placeholder="Enter Your Name">
                             </div>
                             <div class="col-md-12 col-lg-6 col-sm-12  mb-4">
-                                <input type="text" class=" msg w-100" placeholder="Enter Your Email">
+                                <input type="email" name="email" class=" msg w-100" placeholder="Enter Your Email">
                             </div>
                             <div class="col-md-12 col-lg-12 col-sm-12">
-                                <textarea name="name" id="name" class="msg textareac mb-4" placeholder="Message"></textarea>
+                                <textarea name="message" id="name" class="msg textareac mb-4" placeholder="Message"></textarea>
                             <input type="submit" value="SEND" class="submit_btnc btn-primary form-control">
                             </div>
-
                         </form>
                     </div>
                 </div>

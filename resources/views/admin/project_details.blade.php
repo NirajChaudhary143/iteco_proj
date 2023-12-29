@@ -74,6 +74,9 @@
                     @endforeach
                 </tbody>
               </table>
+              <div style="margin: 0px 10px">
+                {{$projects_details->links('pagination::bootstrap-5')}}
+              </div>
             </div>
           </div>
         </div>
